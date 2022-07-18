@@ -1,5 +1,5 @@
 <% layout('layouts/boilerplate') %>
-<div id="map" style="width: 100%; height:500px;"></div>
+<div id="cluster-map"></div>
     <h1>All Campgrounds</h1>
     <a href="http://localhost:3000/campgrounds/new"><button class="btn btn-primary mb-2">Create A New Campground</button></a>
 
@@ -16,7 +16,6 @@
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title"> <%= campground.title %> </h5>
-                            <h5 class="card-title"> <%= campground.properties.popUpMarkup %> </h5>
                             <p class="card-text"><%= campground.description %> </p>                            
                             <p class="small-text">
                                 <small class="text-muted"><%= campground.location %> </small>
